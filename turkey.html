@@ -1,23 +1,153 @@
-<!-- Save as turkey.html -->
 <!DOCTYPE html>
-<html lang="tr" dir="ltr">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UmrahAgencyPro – Türkiye İçin Hazır Umre Ajansı Websitesi</title>
-  <meta name="description" content="Umre ajansınız için profesyonel, kodlama gerektirmeyen hazır web sitesi. 1 saatte canlı!">
+  <title>UmrahAgencyPro – Türkiye için Hazır Umre Ajansı Sitesi</title>
+  <meta name="description" content="1 saatte profesyonel Umre ajansı web sitenizi kurun. Kodlama gerekmez. Gerçek Google Drive fotoğrafları, anında WhatsApp desteği ve TL/USD ödeme seçenekleri ile.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>/* Same CSS as global page, or reuse via CDN */</style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #004d85;
+      --primary-light: #0066a8;
+      --secondary: #ff9b00;
+      --whatsapp: #25D366;
+      --dark: #1a1a2e;
+      --light: #f9fbfd;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+    }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+    .navbar { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); }
+    .cta-button {
+      background: var(--secondary);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .cta-button:hover {
+      background: #e08a00;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 155, 0, 0.3);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 180px 0 100px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.3rem; margin-bottom: 20px; font-weight: 800; }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+
+    .features {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+    .feature-card i {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 80px;
+    }
+  </style>
 </head>
 <body>
-  <header>...</header>
+  <header>
+    <div class="container navbar">
+      <div class="logo">UmrahAgencyPro</div>
+      <a href="https://wa.me/213778668906?text=Merhaba%20Türkiye%20sayfasından!" class="cta-button">
+        <i class="fab fa-whatsapp"></i> WhatsApp'tan Yazın
+      </a>
+    </div>
+  </header>
+
   <section class="hero">
-    <h1>Türkiye'nin En Akıllı Umre Ajansı Platformu</h1>
-    <p>Kodlama bilmeden, 1 saatte profesyonel bir umre ajansı websitesi oluşturun.</p>
-    <div class="price-tag">28.500 ₺</div>
-    <a href="https://wa.me/213778668906?text=Türkiye+versiyonu+hakkında+bilgi+istiyorum" class="btn">WhatsApp'tan Başlayın</a>
+    <div class="container">
+      <h1>Türkiye’de Umre Ajansınız İçin Hazır Web Sitesi</h1>
+      <p>1 saatte, kodlama bilmeden profesyonel bir Umre ajansı web sitesi kurun. Gerçek Google Drive fotoğrafları, anında WhatsApp desteği ve TL/USD ödeme seçenekleriyle.</p>
+      <a href="https://wa.me/213778668906?text=Türkiye%20paketini%20istiyorum!" class="cta-button">
+        <i class="fab fa-whatsapp"></i> Hemen Başlayın
+      </a>
+    </div>
   </section>
-  <!-- Features & Pricing similar to Gulf version -->
+
+  <section class="features">
+    <div class="container">
+      <h2 style="font-size: 2rem; margin-bottom: 10px;">Türkiye Ajansları İçin Özel Hazırlanmıştır</h2>
+      <p style="max-width: 700px; margin: 0 auto 40px; color: var(--gray);">Türk müşterilerinize özel fiyatlandırma, çok dilli içerik (TR/EN/AR) ve güvenli iletişim.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-lira-sign"></i>
+          <h3>TL ve USD Desteği</h3>
+          <p>Paketlerinizi Türk Lirası veya Dolar olarak görüntüleyin. Otomatik kur desteği.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-images"></i>
+          <h3>Gerçek Fotoğraf Galerisi</h3>
+          <p>Google Drive'dan anında fotoğraflarınızı yayınlayın—müşteri güvenini artırın.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fab fa-whatsapp"></i>
+          <h3>Doğrudan WhatsApp</h3>
+          <p>Tüm talepler doğrudan WhatsApp'ınıza gelir. Ekstra yazılım gerekmez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 UmrahAgencyPro — Türkiye ve Dünya Çapında Umre Ajanslarını Güçlendiriyoruz</p>
+      <p><a href="https://wa.me/213778668906" style="color: var(--whatsapp); text-decoration: none;">WhatsApp ile İletişime Geçin</a></p>
+    </div>
+  </footer>
 </body>
 </html>
