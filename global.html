@@ -1,17 +1,153 @@
-<!-- Save as global.html -->
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UmrahAgencyPro – Ready-Made Website for Umrah Agencies Worldwide</title>
-  <meta name="description" content="Launch your professional Umrah agency website in 1 hour — no coding needed. Trusted by agencies in 15+ countries.">
-  <!-- Same CSS/JS -->
+  <title>UmrahAgencyPro – Global Umrah Platform for Agencies Worldwide</title>
+  <meta name="description" content="Launch your professional Umrah agency website in 1 hour—no coding needed. Serve pilgrims from Canada, Germany, Malaysia, Singapore, KSA & beyond. WhatsApp support included.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #004d85;
+      --primary-light: #0066a8;
+      --secondary: #ff9b00;
+      --whatsapp: #25D366;
+      --dark: #1a1a2e;
+      --light: #f9fbfd;
+      --white: #ffffff;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --transition: all 0.3s ease;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background: var(--light);
+    }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+    header {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+    .navbar { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); }
+    .cta-button {
+      background: var(--secondary);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+    }
+    .cta-button:hover {
+      background: #e08a00;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(255, 155, 0, 0.3);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 180px 0 100px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 800; }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9; }
+
+    .features {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+    .feature-card i {
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 80px;
+    }
+  </style>
 </head>
 <body>
-  <h1>The Global Standard for Umrah Agency Websites</h1>
-  <p>Join agencies from Algeria to Indonesia using UmrahAgencyPro to grow bookings online.</p>
-  <div class="price">$2,499 USD</div>
-  <a href="https://wa.me/213778668906?text=I+want+the+Global+version" class="btn">Get Started</a>
+  <header>
+    <div class="container navbar">
+      <div class="logo">UmrahAgencyPro</div>
+      <a href="https://wa.me/213778668906?text=Hello%20from%20Global%20Page!" class="cta-button">
+        <i class="fab fa-whatsapp"></i> WhatsApp Us
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Go Global with Your Umrah Agency</h1>
+      <p>Launch a professional, multilingual Umrah website in 1 hour—no coding needed. Trusted by agencies in Canada, Germany, Malaysia, Singapore, KSA, and beyond.</p>
+      <a href="https://wa.me/213778668906?text=I'm%20interested%20in%20the%20Global%20Plan!" class="cta-button">
+        <i class="fab fa-whatsapp"></i> Get Started Now
+      </a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 style="font-size: 2rem; margin-bottom: 10px;">Built for International Agencies</h2>
+      <p style="max-width: 700px; margin: 0 auto 40px; color: var(--gray);">Serve pilgrims worldwide with localized pricing, languages, and seamless booking.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Multi-Country Ready</h3>
+          <p>Support for CAD, EUR, MYR, SGD, SAR & more. Automatic currency detection.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-images"></i>
+          <h3>Real Photo Gallery</h3>
+          <p>Sync your Google Drive photos instantly—build trust with real pilgrim experiences.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fab fa-whatsapp"></i>
+          <h3>WhatsApp-First Booking</h3>
+          <p>Leads go straight to your WhatsApp—no missed calls, no complex CRM.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 UmrahAgencyPro — Empowering Umrah Agencies Worldwide</p>
+      <p><a href="https://wa.me/213778668906" style="color: var(--whatsapp); text-decoration: none;">Contact via WhatsApp</a></p>
+    </div>
+  </footer>
 </body>
 </html>
